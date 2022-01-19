@@ -18,7 +18,7 @@ public class Aplication {
 		int numeros [] = new int[quantidade];
 		
 		for(int i = 0; i< quantidade; i++) {
-			numeros[i] = random.nextInt(numeroMaximo);
+			numeros[i] = random.nextInt((numeroMaximo - 1) + 1) + 1;
 		}		
 		System.out.println("Números sorteados: " + Arrays.toString(numeros));
 		
